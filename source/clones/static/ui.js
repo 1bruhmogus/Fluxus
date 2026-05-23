@@ -127,7 +127,7 @@ function bindSubmitToNavigate(formElement, onSubmit) {
 
 function getWispUrl() {
 	const protocol = location.protocol === "https:" ? "wss" : "ws";
-	return globalThis?._CONFIG?.wispurl || `${protocol}://${location.host}/wisp/`;
+	return "wss://wisp.mercurywork.shop/wisp/";
 }
 
 async function waitForControllerOrReady(registration, timeoutMs = 10000) {
