@@ -1,16 +1,11 @@
 /**
- *  
- *  Rewritten version of ScramJet's original UI file, for my search bar :3
- *  
- *  This version includes my UI, since I didn't really like
- *   ScramJet's..
- * 
- *  Hopefully this looks nicer! :3
- *  
- *  ** NOT DESIGNED FOR MOBILE (Or really small screens :3) **
- *  ** Maybe I'll add proper scaling in the future!         **
- * 
- */
+ * * Rewritten version of ScramJet's original UI file, for my search bar :3
+ * * This version includes my UI, since I didn't really like
+ * ScramJet's..
+ * * Hopefully this looks nicer! :3
+ * * ** NOT DESIGNED FOR MOBILE (Or really small screens :3) **
+ * ** Maybe I'll add proper scaling in the future!         **
+ * */
 
 const { Controller, config } = $scramjetController;
 
@@ -213,7 +208,7 @@ function showWebContent(body, frame) {
     `;
 
 	body.appendChild(footer);
-	const search = document.getElementById("search-bar"); // 100% efficient, I promise..
+	const search = document.getElementById("search-bar");
 	const popout = document.getElementById("popout");
 	search.value = currentTargetUrl;
 	bindEnterToNavigate(search, () => navigateTo(search.value));
